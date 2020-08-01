@@ -75,11 +75,17 @@ def add_to_graph(room_id, directions, previous_room=None, previous_room_directio
 
 # Helper Function 2 - Getting the available moves inside a room
 # Take in all the directions you can go that you know of
-# Instantiate a list
-# Create a loop that loops over the directions you can go that you know of
-## If the value of the key of the rooms index is "?"
-### Add the known directions to the instantiated list above
-# return the list of directions
+def get_directions(available_directions):
+    # Instantiate a list
+    directions = []
+    # Create a loop that loops over the directions you can go that you know of
+    for direction in available_directions:
+        ## If the value of the key of the rooms index is "?"
+        if graph[room_id][direction] == "?":
+            ### Add the known directions to the instantiated list above
+            directions.append(direction)
+    # return the list of directions
+    return directions
 
 '''
 Now time for our main event
