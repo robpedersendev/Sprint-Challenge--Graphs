@@ -87,9 +87,15 @@ def get_directions(available_directions):
     # return the list of directions
     return directions
 
+
 '''
 Now time for our main event
 '''
+
+
+## Start off in our first room
+add_to_graph(player.current_room.id, player.current_room.get_exits())
+
 # Create a while loop that runs until all rooms are visited
 ## Using the imported player class, get the exits from the current room
 ## Get the current room id from the player class
