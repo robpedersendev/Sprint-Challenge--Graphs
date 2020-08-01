@@ -56,7 +56,13 @@ print("Houston, you read me? We are starting without you.")
 ### Use the dictionary created above to set the value of the key of the previous rooms ID to a "?" per spec
 
 
-
+# Helper Function 2 - Getting the available moves inside a room
+# Take in all the directions you can go that you know of
+# Instantiate a list
+# Create a loop that loops over the directions you can go that you know of
+## If the value of the key of the rooms index is "?"
+### Add the known directions to the instantiated list above
+# return the list of directions
 
 
 # TRAVERSAL TEST - DO NOT MODIFY
