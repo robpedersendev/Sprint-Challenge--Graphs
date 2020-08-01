@@ -34,7 +34,7 @@ We will need a second list per spec, added that below
 backwards_list = []
 
 '''
-My code will start here
+My code [and comments] will start here
 '''
 print("Houston, you read me? We are starting without you.")
 # I need a dictionary for my rooms
@@ -45,6 +45,16 @@ print("Houston, you read me? We are starting without you.")
 ## One to add a room to my graphs dictionary
 ## And another to show me what are my current options for exits
 ## Both of these will be used in a while loop below as the loop progresses
+
+# Helper function 1 - Add a visited room to my graph
+# Take in the current rooms id, the directions you can go, the previous room ID number and direction, use KWARGS?
+# Using the rooms id as the index, instantiate a dictionary
+# Create a for loop that loops of the directions you can go
+## And if the direction you can go is the same as the previous rooms direction
+### Use the dictionary created above to set the value of the key of the previous rooms ID to the previous rooms ID
+## Otherwise
+### Use the dictionary created above to set the value of the key of the previous rooms ID to a "?" per spec
+
 
 
 
