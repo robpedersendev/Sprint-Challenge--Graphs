@@ -28,6 +28,19 @@ player = Player(world.starting_room)
 # Fill this out with directions to walk
 # traversal_path = ['n', 'n']
 traversal_path = []
+'''
+We will need a second list per spec, added that below
+'''
+backwards_list = []
+
+'''
+My code will start here
+'''
+print("Houston, you read me? We are starting without you.")
+# I need a dictionary for my rooms
+# I need a to create a set for my visited rooms
+# And maybe someway to signal my truthy flag for a while loop that I visited all the rooms
+
 
 
 
