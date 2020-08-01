@@ -39,6 +39,7 @@ My code [and comments] will start here
 print("Houston, you read me? We are starting without you.")
 # I need a dictionary for my rooms
 # I need a to create a set for my visited rooms
+# I need a dictionary that points to the opposite directions. This is used in conjunction with the reversed list.
 # And maybe someway to signal my truthy flag for a while loop that I visited all the rooms
 
 # I need two helper functions
@@ -63,6 +64,40 @@ print("Houston, you read me? We are starting without you.")
 ## If the value of the key of the rooms index is "?"
 ### Add the known directions to the instantiated list above
 # return the list of directions
+
+'''
+Now time for our main event
+'''
+# Create a while loop that runs until all rooms are visited
+    ## Using the imported player class, get the exits from the current room
+    ## Get the current room id from the player class
+    ## Maybe print out the data in a user friendly way?
+
+    ## Find the players available moves
+    ## Loop through the available directions to go
+        ## If the value of the key of the current rooms available direction is "?"
+            ## Add that option to the available moves list
+    ## If the length of the available moves list is 0
+        ## Then check if the length of the reversed list is 0
+            ## if it is, then set all rooms are visited value to True
+        ## Othersise
+            ## Reduce the reversed list by 1
+            ## Add to the Traversal Path the room that was removed from the reversed list above
+            ## Move the player using the player class
+
+            ## In case we get back to first room, reset return sequence by checking the
+            ## players current room against the worlds starting room
+    ## Otherwise
+        ## Grab the first available move and maybe print that out to be user friendly?
+        ## Add the direction your heading to the traversal path list
+        ## Add the exact opposite direction your heading in to the reversed list
+        ## Using the player class, move the player
+        ## Grab the players current room using the players class
+        # add new_room_id to room_id's graph
+        ## Set the value of the the key of the index of my rooms graph to the value of the room id above
+        ## If the players room id does not exist in the players visited rooms set
+            ## Then we add the new room to the visited rooms list
+            ## And then add the players room id to the graph using the first helper function
 
 
 # TRAVERSAL TEST - DO NOT MODIFY
