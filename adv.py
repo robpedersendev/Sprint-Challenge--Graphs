@@ -41,6 +41,11 @@ print("Houston, you read me? We are starting without you.")
 # I need a to create a set for my visited rooms
 # And maybe someway to signal my truthy flag for a while loop that I visited all the rooms
 
+# I need two helper functions
+## One to add a room to my graphs dictionary
+## And another to show me what are my current options for exits
+## Both of these will be used in a while loop below as the loop progresses
+
 
 
 
